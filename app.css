@@ -1,0 +1,63 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background */
+}
+
+.container {
+    background-color: #fff; /* White container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px; /* Max width of the container */
+    text-align: center;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+.input-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-section input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input-section button:hover {
+    background-color: #0056b3;
+}
+
+.output-section h2 {
+    margin-top: 20px;
+}
+
+.output-section div#time-zone-results {
+    text-align: left;
+    padding: 10px;
+}
+
+.output-section div#time-zone-results p {
+    margin-bottom: 5px;
+}
