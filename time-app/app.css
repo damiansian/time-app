@@ -31,19 +31,17 @@ body {
 
 .input-section input,
 .input-section select {
-    margin-bottom: 10px;
-    padding-top: 10px !important; /* Vertical padding top */
-    padding-bottom: 10px !important; /* Vertical padding bottom */
-    padding-left: 10px !important; /* Horizontal padding left */
-    padding-right: 10px !important; /* Horizontal padding right */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 10px !important;
+    padding: 10px !important; /* Ensure consistent padding */
+    border: 1px solid #4a4a4a !important; /* Gray border with higher contrast */
+    border-radius: 4px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: 40px !important; /* Ensure consistent height */
 }
 
 button {
-    outline: none;
+    outline: none !important;
 }
 
 button:focus {
@@ -52,28 +50,29 @@ button:focus {
 }
 
 .input-section button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 20px !important;
+    background-color: #007bff !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    height: 40px !important; /* Ensure consistent height with inputs */
 }
 .input-section button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3 !important;
 }
 
 .output-section h2 {
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 .output-section div#time-zone-results {
-    text-align: left;
-    padding: 10px;
+    text-align: left !important;
+    padding: 10px !important;
 }
 
 .output-section div#time-zone-results p {
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
 
 .user-timezone {

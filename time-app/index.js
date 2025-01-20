@@ -104,12 +104,12 @@ function generateTimeZoneRows(localDateTime) {
         const formatter = new Intl.DateTimeFormat('en-US', options);
         const parts = formatter.formatToParts(localDateTime);
         const day = parts.find(part => part.type === 'weekday').value;
-        const hour = parts.find(part => part.type === 'hour').value;
+        const hour = parseInt(parts.find(part => part.type === 'hour').value);
         const minute = parts.find(part => part.type === 'minute').value;
         const ampm = parts.find(part => part.type === 'dayPeriod').value.toUpperCase();
 
         const isFriendly = (day !== 'Saturday' && day !== 'Sunday') && 
-                           ((ampm === 'AM' && hour >= 9) || (ampm === 'PM' && hour < 5));
+                           ((ampm === 'AM' && hour >= 9 && hour < 12) || (ampm === 'PM' && (hour === 12 || hour < 5)));
 
         const isUserTimeZone = tz.timeZone === userTimeZone;
 
